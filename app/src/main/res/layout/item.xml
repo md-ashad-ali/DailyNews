@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_design"
+       android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        >
+        <ImageView
+            android:id="@+id/item_images"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/boy"
+            android:scaleType="fitXY"
+            android:layout_marginRight="6dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/item_catagori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catagori"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#FF5722"
+                android:padding="2dp"
+                android:layout_marginBottom="1dp"
+
+                />
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I pitted ChatGPT against a real financial advisor to help me save for retirement—and the winner is clear"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:lines="2"
+                android:layout_marginBottom="4dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/item_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I pitted ChatGPT against a real financial advisor to help me save for retirement—and the winner is clear"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
